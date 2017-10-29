@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.hover-container {
+  display: inline-block;
+  position: absolute;
+}
+
+.hover-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  left: -50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.inner {
+  display: flex;
+}
+
+.inner p {
+  display: block;
+}
+
+.modal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-inner {
+  background-color: #fff;
+}
